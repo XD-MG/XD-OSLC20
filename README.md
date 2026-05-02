@@ -23,16 +23,16 @@ This dataset aims to advance research in heterogeneous remote sensing data fusio
 ## 📊 Class Definitions
 The dataset includes the following 8 typical land cover categories. To facilitate visualization and ensure consistency across different models, we provide the following color mapping (RGB) for the 8 land cover categories:
 
-| **ID** | **Class Name** | **Chinese Name** | **Color** | **RGB Value**    | **Hex Code** |
-| ------ | -------------- | ---------------- | --------- | ---------------- | ------------ |
-| 1      | **Water**      | 水体               | 🟦        | `(0, 176, 240)`  | `#00B0F0`    |
-| 2      | **Farmland**   | 农田               | 🟨        | `(255, 192, 0)`  | `#FFC000`    |
-| 3      | **Forest**     | 森林               | 🟩        | `(0, 176, 80)`   | `#00B050`    |
-| 4      | **Grassland**  | 草地               | 🍃        | `(146, 208, 80)` | `#92D050`    |
-| 5      | **Road**       | 道路               | ⬛         | `(23, 55, 94)`   | `#17375E`    |
-| 6      | **Building**   | 建筑               | 🟥        | `(192, 0, 0)`    | `#C00000`    |
-| 7      | **Bare Land**  | 裸地               | 🟫        | `(148, 138, 84)` | `#948A54`    |
-| 8      | **Others**     | 其他               | 🌑        | `(0, 0, 0)`      | `#000000`    |
+| **ID** | **Class Name** | **Chinese Name** | **Color** | **RGB Value** | **Hex Code** |
+| ------ | -------------- | ---------------- | --------- | ------------- | ------------ |
+| 1 | **Water** | 水体 | ![#00B0F0](https://placehold.co/18x18/00B0F0/00B0F0.png) | `(0, 176, 240)` | `#00B0F0` |
+| 2 | **Farmland** | 农田 | ![#FFC000](https://placehold.co/18x18/FFC000/FFC000.png) | `(255, 192, 0)` | `#FFC000` |
+| 3 | **Forest** | 森林 | ![#00B050](https://placehold.co/18x18/00B050/00B050.png) | `(0, 176, 80)` | `#00B050` |
+| 4 | **Grassland** | 草地 | ![#92D050](https://placehold.co/18x18/92D050/92D050.png) | `(146, 208, 80)` | `#92D050` |
+| 5 | **Road** | 道路 | ![#17375E](https://placehold.co/18x18/17375E/17375E.png) | `(23, 55, 94)` | `#17375E` |
+| 6 | **Building** | 建筑 | ![#C00000](https://placehold.co/18x18/C00000/C00000.png) | `(192, 0, 0)` | `#C00000` |
+| 7 | **Bare Land** | 裸地 | ![#948A54](https://placehold.co/18x18/948A54/948A54.png) | `(148, 138, 84)` | `#948A54` |
+| 0 | **Others** | 其他 | ![#000000](https://placehold.co/18x18/000000/000000.png) | `(0, 0, 0)` | `#000000` |
 
 color_map.py be like:
 ```python
