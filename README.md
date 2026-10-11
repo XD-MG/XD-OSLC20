@@ -9,15 +9,14 @@ XD-OSLC20: A new Optial-SAR high-resolution dataset for land cover classificat
 
 >This is a heads-up about the dataset; the official release date will be announced after the paper is accepted.
 
-Welcome to the official repository of **XD-OSLC20**! This is a large-scale, high-resolution (1m) multimodal remote sensing dataset specifically designed for **Optical-SAR Fusion Land Cover Classification**.
+Welcome to the official repository of **XD-OSLC20**! This is a large-scale, high-resolution (1m) multimodal remote sensing dataset specifically designed for **Optical-SAR Land Cover Classification**.
 
-This dataset aims to advance research in heterogeneous remote sensing data fusion and interpretation. By pairing Optical and SAR imagery, it helps overcome the limitations of single-modality sensors, such as cloud interference in optical images and the lack of semantic textures in SAR. The dataset covers 20 typical sample regions across East Asia (China, Japan, South Korea, and North Korea), capturing extremely rich geographical and topographical features.
+This dataset aims to advance research in heterogeneous remote sensing interpretation. By pairing Optical and SAR imagery, it helps overcome the limitations of single-modality sensors, such as cloud interference in optical images and the lack of semantic textures in SAR. The dataset covers 20 typical sample regions across East Asia (China, Japan, South Korea, and North Korea), capturing extremely rich geographical and topographical features.
 
 ## ✨ Key Features
 * **High-Precision Registration**: Provides strictly aligned Optical and SAR image pairs for multimodal feature learning.
 * **Massive Scale**: Contains a total of **8.99 billion** pixels and **15,071** finely annotated objects, satisfying the data demands of large-scale deep learning models.
 * **Geographic Diversity**: Spans across 4 countries/regions, encompassing diverse terrains including dense coastal urban areas, inland farmlands, and arid zones, providing an ideal benchmark for cross-regional generalization.
-* **Rigorous Spatial Splitting**: The dataset supports strict spatially independent train/validation splits to fundamentally prevent spatial data leakage, ensuring objective model evaluation.
 * **Fine-Grained Categories**: Defines 8 typical land cover classes, comprehensively covering both urban and natural scenes.
 
 ## 📊 Class Definitions
@@ -56,6 +55,12 @@ def visualize_label(label_mask):
         img[label_mask == i] = color
     return img
 ```
+
+## 🖼️Examples
+
+<img width="702" height="275" alt="image" src="https://github.com/user-attachments/assets/1c9622ef-3f2c-4313-87b8-1076cdcd6004" />
+
+
 ## 📂 Data Structure
 The dataset is organized into opt, sar, and lbl directories, with corresponding .txt files in the list folder to define the data splits. This structure is optimized for standard semantic segmentation pipelines.
 ```
@@ -64,7 +69,7 @@ The dataset is organized into opt, sar, and lbl directories, with corresponding 
 ├── sar/             # Co-registered SAR images (.tif / .png)
 ├── lbl/             # Land cover ground truth masks
 └── list/            # Data split files
-    ├── train.txt    # List of filenames for training
-    ├── val.txt      # List of filenames for validation
-    └── test.txt     # List of filenames for testing
+    ├── train.txt    
+    ├── val.txt      
+    └── test.txt     
 ```
